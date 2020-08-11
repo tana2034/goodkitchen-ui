@@ -7,4 +7,4 @@ services:
             - "3333:3333"
         volumes:
             - .:/app
-        command: yarn run dev
+        command: yarn run dev:docker
