@@ -2,6 +2,13 @@
 
 > My stunning Nuxt.js project
 
+## Docker Setup
+
+```bash
+$ docker-compose up -d
+# see localhost:3333
+```
+
 ## Build Setup
 
 ``` bash
