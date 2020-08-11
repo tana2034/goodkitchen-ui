@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+    yarn:
+        image: node:14.7
+        working_dir: /app
+        ports:
+            - "3333:3333"
+        volumes:
+            - .:/app
+        command: yarn run dev:docker
