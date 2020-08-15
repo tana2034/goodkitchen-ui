@@ -7,4 +7,5 @@ services:
             - "3333:3333"
         volumes:
             - .:/app
-        command: yarn run dev:docker
+        entrypoint: yarn
+        command: run dev:docker

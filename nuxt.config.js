@@ -64,6 +64,8 @@ export default {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+
+    buildModules: ['@nuxt/typescript-build']
   }
 }
