@@ -1,33 +1,14 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
-      <card title="Free" icon="github">
-        Open source on <a href="https://github.com/buefy/buefy"> GitHub </a>
-      </card>
-
-      <card title="Responsive" icon="cellphone-link">
-        <b class="has-text-grey"> Every </b> component is responsive
-      </card>
-
-      <card title="Modern" icon="alert-decagram">
-        Built with <a href="https://vuejs.org/"> Vue.js </a> and
-        <a href="http://bulma.io/"> Bulma </a>
-      </card>
-
-      <card title="Lightweight" icon="arrange-bring-to-front">
-        No other internal dependency
-      </card>
-    </div>
     <div>
-      <span>ローカル疎通確認</span>
-      <table>
-        <tr>
-          <th>タイトル</th>
-        </tr>
-        <tr v-for="recipe in recipes" :key="recipe.id">
-          <td>{{ recipe.id }} {{ recipe.title }}</td>
-        </tr>
-      </table>
+      <magic-grid>
+        <card
+          v-for="recipe in recipes"
+          :key="recipe.id"
+          :title="recipe.title"
+          :body="recipe.description"
+        />
+      </magic-grid>
     </div>
   </section>
 </template>
